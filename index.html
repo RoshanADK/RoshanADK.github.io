@@ -1,3 +1,4 @@
+<!-- Portfolio Website along with the Downloadable Resume using HTML,CSS,Boostrap,JavaScript ! Will be update as I learn the new tech to reflect all the changes that a web development technology can bring about ! -->
 <! DOCTYPE html>
 <html lang="en">
 
@@ -14,8 +15,7 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-   <style>
-
+<style>
      html *
 {
    font-family: cursive ;
@@ -24,7 +24,7 @@
             margin-left: 35px;
             margin-right: 35px;
             margin-top: 85px;
-            background-color: #1B2631  ;
+            background-color: #1B2631 ;
 
 
         }
@@ -53,9 +53,21 @@
         }
 
 
-    </style>
+
+        #dwnld_btn{
+            color: white;
+            background-color: #1B2631;
+        }
 
 
+</style>
+
+<script type="text/javascript">
+    function file_download(){
+        alert("The resume is being downloaded ! Click OK to download the File");
+    }
+
+</script>
 </head>
 
 <body>
@@ -68,11 +80,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="https://roshanadhikarii.blogspot.com" class="navbar-brand" style="color:yellow"  id="domain">RoshanAdhikari</a>
+            <a href="https://roshanadhikarii.blogspot.com" class="navbar-brand" style="color:white"  id="domain">Roshan Adhikari</a>
 
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
-            <button class="btn btn-danger navbar-btn navbar-right" id="dwnld_btn">Download</button>
+            <button class="btn navbar-btn navbar-right" id="dwnld_btn"><a href="D:\Git\roshanadk.github.io\Resume.pdf" style="color:white"download onclick="file_download()">Download Resume</a></button>
 
             <ul class="nav navbar-nav">
                 <li><a href="#feedback">Feedback</a></li>
